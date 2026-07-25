@@ -1,0 +1,176 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
+// Compile: bin/misc <file>.mis --check --compact-letters
+// Title: bCLRTY Contracts · NodeOptimize
+
+module BClrtyContractsNodeOptimize {
+
+  embed gates 3..=6 {
+    context: "NodeOptimize pack on MIS domain b_clrty — CLRTY-1";
+    ai: "Index via mis_code_index + moniversive_invariant_static_ML";
+    execution: "assert_pack; assert_each; settle_clrty1";
+    capital: "Settlement clrty-1 / chain 1202 · Creator Chandler William Ferguson";
+  }
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant embed_gates_present: embed_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant pack_node_optimize_bound: pack_bound == true;
+  invariant catalog_backlink: mis_catalog_bound == true;
+
+  invariant node_optimize_041: node_optimize_041_bound == true;
+  invariant node_optimize_042: node_optimize_042_bound == true;
+  invariant node_optimize_043: node_optimize_043_bound == true;
+  invariant node_optimize_044: node_optimize_044_bound == true;
+  invariant node_optimize_045: node_optimize_045_bound == true;
+  invariant node_optimize_046: node_optimize_046_bound == true;
+  invariant node_optimize_047: node_optimize_047_bound == true;
+  invariant node_optimize_048: node_optimize_048_bound == true;
+  invariant node_optimize_049: node_optimize_049_bound == true;
+  invariant node_optimize_050: node_optimize_050_bound == true;
+  invariant node_optimize_051: node_optimize_051_bound == true;
+  invariant node_optimize_052: node_optimize_052_bound == true;
+  invariant node_optimize_053: node_optimize_053_bound == true;
+  invariant node_optimize_054: node_optimize_054_bound == true;
+  invariant node_optimize_055: node_optimize_055_bound == true;
+  invariant node_optimize_056: node_optimize_056_bound == true;
+  invariant node_optimize_057: node_optimize_057_bound == true;
+  invariant node_optimize_058: node_optimize_058_bound == true;
+  invariant node_optimize_059: node_optimize_059_bound == true;
+  invariant node_optimize_060: node_optimize_060_bound == true;
+
+  outcome assert_pack(payload: Bytes) {
+    require payload != @0;
+    constraint pack_bound == true;
+  }
+
+  outcome settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_041(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_041_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_042(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_042_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_043(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_043_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_044(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_044_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_045(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_045_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_046(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_046_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_047(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_047_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_048(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_048_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_049(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_049_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_050(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_050_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_051(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_051_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_052(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_052_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_053(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_053_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_054(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_054_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_055(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_055_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_056(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_056_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_057(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_057_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_058(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_058_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_059(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_059_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_node_optimize_060(payload: Bytes) {
+    require payload != @0;
+    constraint node_optimize_060_bound == true;
+    constraint chain_id == 1202;
+  }
+
+}

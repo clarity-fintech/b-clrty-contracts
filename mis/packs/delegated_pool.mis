@@ -1,0 +1,176 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
+// Compile: bin/misc <file>.mis --check --compact-letters
+// Title: bCLRTY Contracts · DelegatedPool
+
+module BClrtyContractsDelegatedPool {
+
+  embed gates 3..=6 {
+    context: "DelegatedPool pack on MIS domain b_clrty — CLRTY-1";
+    ai: "Index via mis_code_index + moniversive_invariant_static_ML";
+    execution: "assert_pack; assert_each; settle_clrty1";
+    capital: "Settlement clrty-1 / chain 1202 · Creator Chandler William Ferguson";
+  }
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant embed_gates_present: embed_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant pack_delegated_pool_bound: pack_bound == true;
+  invariant catalog_backlink: mis_catalog_bound == true;
+
+  invariant delegated_pool_001: delegated_pool_001_bound == true;
+  invariant delegated_pool_002: delegated_pool_002_bound == true;
+  invariant delegated_pool_003: delegated_pool_003_bound == true;
+  invariant delegated_pool_004: delegated_pool_004_bound == true;
+  invariant delegated_pool_005: delegated_pool_005_bound == true;
+  invariant delegated_pool_006: delegated_pool_006_bound == true;
+  invariant delegated_pool_007: delegated_pool_007_bound == true;
+  invariant delegated_pool_008: delegated_pool_008_bound == true;
+  invariant delegated_pool_009: delegated_pool_009_bound == true;
+  invariant delegated_pool_010: delegated_pool_010_bound == true;
+  invariant delegated_pool_011: delegated_pool_011_bound == true;
+  invariant delegated_pool_012: delegated_pool_012_bound == true;
+  invariant delegated_pool_013: delegated_pool_013_bound == true;
+  invariant delegated_pool_014: delegated_pool_014_bound == true;
+  invariant delegated_pool_015: delegated_pool_015_bound == true;
+  invariant delegated_pool_016: delegated_pool_016_bound == true;
+  invariant delegated_pool_017: delegated_pool_017_bound == true;
+  invariant delegated_pool_018: delegated_pool_018_bound == true;
+  invariant delegated_pool_019: delegated_pool_019_bound == true;
+  invariant delegated_pool_020: delegated_pool_020_bound == true;
+
+  outcome assert_pack(payload: Bytes) {
+    require payload != @0;
+    constraint pack_bound == true;
+  }
+
+  outcome settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_001(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_001_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_002(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_002_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_003(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_003_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_004(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_004_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_005(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_005_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_006(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_006_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_007(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_007_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_008(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_008_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_009(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_009_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_010(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_010_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_011(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_011_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_012(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_012_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_013(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_013_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_014(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_014_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_015(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_015_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_016(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_016_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_017(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_017_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_018(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_018_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_019(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_019_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_delegated_pool_020(payload: Bytes) {
+    require payload != @0;
+    constraint delegated_pool_020_bound == true;
+    constraint chain_id == 1202;
+  }
+
+}
