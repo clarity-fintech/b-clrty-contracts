@@ -1,0 +1,55 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Network bind for clarity-fintech/b-clrty-contracts
+// Compile: bin/misc <file>.mis --check --compact-letters
+
+module BClrtyContractsNetworkBind {
+
+  embed gates 3..=6 {
+    context: "Bind b-clrty-contracts command surface to CLRTY-1 network fabric";
+    ai: "Attach language_root + rpc gateway + staking mesh + cherry data plane";
+    execution: "bind_language_root; bind_rpc; bind_mesh; bind_cherry; bind_index; settle_clrty1";
+    capital: "Settlement clrty-1 / chain 1202";
+  }
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant embed_gates_present: embed_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant extension_mis: source_extension == mis;
+  invariant no_python_kernel: python_package_code == false;
+  invariant l1_only: foreign_chain_id == @0;
+  invariant domain_bound: domain == b_clrty;
+  invariant creator_bound: creator == chandler_william_ferguson;
+
+  outcome bind_language_root() {
+    constraint language_root_bound == true;
+    constraint deep_root == moniversive;
+  }
+
+  outcome bind_rpc() {
+    constraint rpc_gateway_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome bind_mesh() {
+    constraint staking_priority_mesh == true;
+    constraint mis_router_bound == true;
+  }
+
+  outcome bind_cherry() {
+    constraint cherry_vds_bound == true;
+  }
+
+  outcome bind_index() {
+    constraint mis_code_index_bound == true;
+  }
+
+  outcome settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint chain_id == 1202;
+    constraint settlement_network == clrty_1;
+  }
+}

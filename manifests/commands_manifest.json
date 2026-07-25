@@ -1,0 +1,41 @@
+{
+  "schema": "clrty.mis_repo_commands/v1",
+  "updated_at": "2026-07-25T19:49:48.317Z",
+  "repo": "b-clrty-contracts",
+  "github": "https://github.com/clarity-fintech/b-clrty-contracts",
+  "family": "program",
+  "domain": "b_clrty",
+  "settlement_network": "clrty-1",
+  "settlement_chain_id": 1202,
+  "compiler_kernel": "misc",
+  "modules": {
+    "commands": "mis/commands/BClrtyContractsCommands.mis",
+    "network_bind": "mis/commands/BClrtyContractsNetworkBind.mis",
+    "catalog": "mis/commands/BClrtyContractsCommandCatalog.mis"
+  },
+  "commands": [
+    "cmd_check",
+    "cmd_pack_dispatch",
+    "cmd_connect_network",
+    "cmd_rpc_ping",
+    "cmd_settle_clrty1",
+    "cmd_sync_cherry",
+    "cmd_index_bind",
+    "cmd_deploy_bind",
+    "cmd_invoke",
+    "cmd_vault",
+    "cmd_adapter"
+  ],
+  "network": {
+    "rpc": "https://rpc.clarity-fintech.com/",
+    "api": "https://api.clarity-fintech.com/",
+    "explorer": "https://explorer.clarity-fintech.com/",
+    "exchange": "https://exchange.clarity-fintech.com/",
+    "cherry": "84.32.109.227",
+    "language_root": "CLRTY_SUBSTRATE/boot/moniversive_language_root.json",
+    "mesh": "moniversive/framework/StakingPriorityMesh.mis",
+    "router": "moniversive/framework/MisRouter.mis",
+    "command_mesh": "moniversive/framework/ClarityFintechRepoCommandMesh.mis"
+  },
+  "rpc_method": "clrty_getRepoCommands"
+}
