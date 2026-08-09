@@ -1,0 +1,28 @@
+// CLRTY-B-CLRTY-CONTRACTS node beacon — clarity-fintech / clrty-1 / 1202
+// GitHub: https://github.com/clarity-fintech/b-clrty-contracts
+// Check twin: bin/misc moniversive/framework/beacons/b-clrty-contracts.mis --check --compact-letters
+
+module ClrtyBClrtyContractsBeacon {
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant beacon_id: beacon_id == clrty_b_clrty_contracts;
+  invariant node_name: node_name == clrty_b_clrty_contracts;
+
+  outcome heartbeat(seq: Bytes) {
+    require seq != @0;
+    constraint chain_id == 1202;
+    constraint heartbeat_ok == true;
+  }
+
+  outcome superstructure_bind(catalog: Bytes) {
+    require catalog != @0;
+    constraint superstructure_linked == true;
+  }
+
+  outcome letter_hash(payload: Bytes) {
+    require payload != @0;
+    constraint letter_root != @0;
+  }
+}

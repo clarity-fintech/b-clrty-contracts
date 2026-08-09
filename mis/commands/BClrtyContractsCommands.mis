@@ -5,16 +5,7 @@
 // Network: clrty-1 / chain 1202 · RPC rpc.clarity-fintech.com · kernel misc
 
 module BClrtyContractsCommands {
-
-  embed gates 3..=6 {
-    context: "Full command surface for clarity-fintech/b-clrty-contracts on CLRTY-1";
-    ai: "Route via MisRouter + StakingPriorityMesh + WalletBackendRouter; refuse Python kernels";
-    execution: "cmd_check; cmd_connect_network; cmd_rpc_ping; cmd_pack_dispatch; family_dispatch; cmd_settle_clrty1";
-    capital: "Settlement clrty-1 / chain 1202 · Creator Chandler William Ferguson";
-  }
-
   invariant letter_hash_bound: letter_hash_root != @0;
-  invariant embed_gates_present: embed_root != @0;
   invariant deep_root_moniversive: deep_root == moniversive;
   invariant settlement_chain: chain_id == 1202;
   invariant settlement_network_clrty1: settlement_network == clrty_1;

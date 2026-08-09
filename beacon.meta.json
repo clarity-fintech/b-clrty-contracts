@@ -1,0 +1,14 @@
+{
+  "schema": "clrty.beacon_meta/v1",
+  "updated_at": "2026-07-29T03:15:03Z",
+  "repo_slug": "b-clrty-contracts",
+  "beacon_id": "clrty-b-clrty-contracts",
+  "node_name": "CLRTY-B-CLRTY-CONTRACTS",
+  "github": "https://github.com/clarity-fintech/b-clrty-contracts",
+  "superstructure_root": "/Users/william/$CLRTY_PROJECT",
+  "superstructure_link": "../../../CLRTY_SUBSTRATE/boot/clrty_superstructure.json",
+  "symlinks": {
+    "clrty_superstructure.json": "../../../CLRTY_SUBSTRATE/boot/clrty_superstructure.json"
+  },
+  "framework_twin": "moniversive/framework/beacons/b-clrty-contracts.mis"
+}

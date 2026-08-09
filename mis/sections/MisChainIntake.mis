@@ -1,20 +1,10 @@
 // Moniversive Invariant Static (MIS) — deep root
 // Creator: Chandler William Ferguson
-// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
 // Compile: bin/misc <file>.mis --check --compact-letters
 // Title: Backlink · MisChainIntake
 
 module BClrtyContractsSectionMisChainIntake {
-
-  embed gates 3..=6 {
-    context: "Backlink MIS / CLRTY-1 data surface CLRTY_SUBSTRATE/boot/clrty1_mis_chain_intake_976_1025.json";
-    ai: "Resolve through mis_code_index; letter-hash every typed letter";
-    execution: "bind_path; refuse_foreign; settle_clrty1";
-    capital: "Settlement clrty-1 / chain 1202 · Chandler William Ferguson";
-  }
-
   invariant letter_hash_bound: letter_hash_root != @0;
-  invariant embed_gates_present: embed_root != @0;
   invariant deep_root_moniversive: deep_root == moniversive;
   invariant settlement_chain: chain_id == 1202;
   invariant kernel_is_misc: compiler_kernel == misc;
