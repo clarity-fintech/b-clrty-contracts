@@ -19,3 +19,7 @@ network-connect: commands-check
 	@echo CONNECTED clrty-1/1202 $(notdir $(CURDIR))
 	@echo RPC https://rpc.clarity-fintech.com
 	@echo MODULES mis/commands/BClrtyContractsCommands.mis
+
+.PHONY: bootstrap
+bootstrap:
+	@bash scripts/bootstrap-misc.sh
