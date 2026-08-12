@@ -14,6 +14,10 @@ module BClrtyContractsNetworkBind {
   invariant l1_only: foreign_chain_id == @0;
   invariant domain_bound: domain == b_clrty;
   invariant creator_bound: creator == chandler_william_ferguson;
+  invariant finality_cap_ms_bound: finality_cap_ms == 400;
+  invariant network_mainnet_bound: mainnet_rpc_bound == true;
+  invariant network_testnet_bound: testnet_rpc_bound == true;
+  invariant network_devnet_bound: devnet_rpc_bound == true;
 
   outcome bind_language_root() {
     constraint language_root_bound == true;
@@ -36,6 +40,18 @@ module BClrtyContractsNetworkBind {
 
   outcome bind_index() {
     constraint mis_code_index_bound == true;
+  }
+
+  outcome bind_testnet() {
+    constraint testnet_rpc_bound == true;
+    constraint chain_id == 1202;
+    constraint finality_cap_ms == 400;
+  }
+
+  outcome bind_devnet() {
+    constraint devnet_rpc_bound == true;
+    constraint chain_id == 1202;
+    constraint finality_cap_ms == 400;
   }
 
   outcome settle_clrty1(intent: Bytes) {

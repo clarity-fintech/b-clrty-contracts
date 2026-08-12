@@ -231,7 +231,37 @@
   ],
   "clrty1": {
     "network": "clrty-1",
-    "chain_id": 1202
+    "chain_id": 1202,
+    "numeric_chain_id": 1202,
+    "finality_cap_ms": 400,
+    "networks": {
+      "mainnet": {
+        "rpc": "https://rpc.clarity-fintech.com",
+        "ws": "wss://rpc.clarity-fintech.com",
+        "api": "https://api.clarity-fintech.com",
+        "explorer": "https://explorer.clarity-fintech.com",
+        "local_rpc": "http://127.0.0.1:8545",
+        "chain_id": "clrty-1",
+        "numeric_chain_id": 1202,
+        "finality_cap_ms": 400
+      },
+      "testnet": {
+        "rpc": "https://testnet-api.clarity-fintech.com",
+        "ws": "wss://testnet-api.clarity-fintech.com",
+        "local_rpc": "http://127.0.0.1:8545",
+        "chain_id": "clrty-1",
+        "numeric_chain_id": 1202,
+        "finality_cap_ms": 400
+      },
+      "devnet": {
+        "rpc": "https://devnet-api.clarity-fintech.com",
+        "ws": "wss://devnet-api.clarity-fintech.com",
+        "local_rpc": "http://127.0.0.1:8545",
+        "chain_id": "clrty-1",
+        "numeric_chain_id": 1202,
+        "finality_cap_ms": 400
+      }
+    }
   },
   "siblings": {
     "static_ml": "https://github.com/clarity-fintech/moniversive_invariant_static_ML",
